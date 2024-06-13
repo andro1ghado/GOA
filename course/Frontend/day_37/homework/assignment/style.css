@@ -1,0 +1,98 @@
+* {
+    font-family: cursive;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+}
+
+.mainbox {
+    border: 3px solid cyan;
+    width: 45%;
+    height: 480px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 50px;
+    
+}
+
+h2, p {
+    color: cyan;
+}
+
+.registerText {
+    float: right;
+    position: relative;
+    right: 65px;
+    top: 20px;
+}
+
+.formContainer {
+    width: 100%;
+    height: 200px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid cyan;
+    position: relative;
+    top: 100px;
+}
+
+#input1 {
+    transform: scale(0.75);
+    position: absolute;
+    top: 10px;
+    border: 1px solid cyan;
+    border-radius: 20px;
+    background: transparent;
+    color: cyan;
+}
+
+::placeholder {
+    color: cyan;
+    position: relative;
+    left: 10px;
+}
+
+#input2 {
+    transform: scale(0.75);
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    border: 1px solid cyan;
+    border-radius: 20px;
+    background: transparent;
+    color: cyan;
+}
+
+#input3 {
+    transform: scale(0.75);
+    position: absolute;
+    top: 70px;
+    left: 200px;
+    border: 1px solid cyan;
+    border-radius: 20px;
+    background: transparent;
+    color: cyan;
+}
+
+#input4 {
+    transform: scale(0.75);
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    border: 1px solid cyan;
+    border-radius: 20px;
+    background: transparent;
+    color: cyan;
+}
+
+.footerText {
+    font-size: 26px;
+    position: absolute;
+    top: 120px;
+    left: 200px;
+}

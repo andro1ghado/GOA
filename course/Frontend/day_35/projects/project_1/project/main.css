@@ -1,0 +1,164 @@
+/* font */
+html {
+    font-family: cursive;
+}
+
+/* css reset */
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: #000;
+}
+
+/* responsive */
+.responsive {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* circle */
+.circle {
+    width: 300px;
+    height: 300px;
+    border: 2px solid orangered;
+    border-radius: 50%;
+    position: relative;
+    left: 120px;
+    top: 200px;
+
+    /* animation */
+    animation-name: loading;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-delay: .2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+/* @keyframes */
+@keyframes loading {
+    0% {
+        opacity: 100%;
+        border: 2px solid orangered;
+        transform: scale(1);
+    }
+    25% {
+        border: 2px solid indigo;
+    }
+    50% {
+        border: 2px solid orangered;
+    }
+    75% {
+        border: 2px solid indigo;
+    }
+    100% {
+        opacity: 25%;
+        transform: scale(1.3);
+        border: 2px solid orangered;
+    }
+}
+
+@keyframes loading_innercircle {
+    0% {
+        opacity: 100%;
+        border: 2px solid green;
+        transform: scale(1);
+    }
+    25% {
+        border: 2px solid chartreuse;
+    }
+    50% {
+        border: 2px solid green;
+    }
+    75% {
+        border: 2px solid chartreuse;
+    }
+    100% {
+        opacity: 25%;
+        transform: scale(1.3);
+        border: 2px solid green;
+    }
+}
+
+@keyframes functionA {
+    0% {
+        border: 2px solid olivedrab;
+        opacity: 0%;
+    }
+    25% {
+        border: 2px solid springgreen;
+    }
+    50% {
+        border: 2px solid olivedrab;
+    }
+    75% {
+        border: 2px solid springgreen;
+    }
+    100% {
+        border: 2px solid olivedrab;
+        opacity: 80%;
+    }
+}
+
+/* inner_circle */
+.inner_circle {
+    width: 180px;
+    height: 180px;
+    border: 2px solid green;
+    border-radius: 50%;
+    position: relative;
+    top: 60px;
+    left: 60px;
+
+    /* animation */
+    animation-name: loading_innercircle;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-delay: .2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+/* <a> */
+a {
+    color: indigo;
+    text-decoration: none;
+}
+
+/* <a> on hover */
+a:hover {
+    text-decoration: indigo underline;
+}
+
+/* navigation button */
+.navigation {
+    width: 200px;
+    height: 60px;
+    border: 2px solid olivedrab;
+    position: relative;
+    top: 600px;
+    right: 8em;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* animation */
+    animation-name: functionA;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: .2s;
+
+    /* transition */
+    transition-property: transform;
+    transition-duration: .7s;
+    transition-timing-function: linear;
+    transition-delay: .2s;
+}
+
+/* navigation on hover */
+.navigation:hover {
+    transform: scale(1.1);
+}

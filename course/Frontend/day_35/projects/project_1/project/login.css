@@ -1,0 +1,638 @@
+/* font */
+html {
+    font-family: cursive;
+}
+
+/* CSS reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* body */
+body {
+    background: grey;
+    animation-name: backgroundAnimation;
+    animation-duration: 3s;
+    animation-delay: .2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* @keyframes backgroundAnimation */
+@keyframes backgroundAnimation {
+    0% {
+        background: grey;
+    }
+    25% {
+        background: darkslategray;
+    }
+    50% {
+        background: slategray;
+    }
+    75% {
+        background: lightslategray;
+    }
+    100% {
+        background: grey;
+    }
+}
+
+/* forms */
+#forms {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    opacity: 80%;
+    margin-top: 50px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    /* animation */
+    animation-name: starting;
+    animation-duration: 1s;
+    animation-delay: .2s;
+    animation-timing-function: linear;
+}
+
+/* @keyframes */
+@keyframes starting {
+    0% {
+        opacity: 0%;
+    }
+    25% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 75%;
+    }
+}
+
+/* titleregister */
+#titleRegister {
+    color: #FFF;
+    font-size: larger;
+    text-decoration: underline #FFF;
+    position: absolute;
+}
+
+/* email */
+#input1 {
+    width: 200px;
+    height: 20px;
+    position: relative;
+    top: 60px;
+    right: 10px;
+    background: #8b17af;
+    border: none;
+    border-bottom: 2px solid indigo;
+    font-family: cursive;
+    color: #FFF;
+
+    /* transition */
+    transition-property: transform;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* email placeholder */
+#input1::placeholder {
+    color: rgb(255, 255, 255);
+    position: relative;
+    left: 5px;
+    font-family: cursive;
+}
+
+/* email on hover */
+#input1:hover {
+    transform:  scale(1.03);
+}
+
+/* tel */
+#input2 {
+    width: 200px;
+    height: 20px;
+    position: relative;
+    top: 60px;
+    left: 10px;
+    background: #8b17af;
+    border: none;
+    border-bottom: 2px solid indigo;
+    font-family: cursive;
+    color: #FFF;
+
+    /* transition */
+    transition-property: transform;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* tel placeholder */
+#input2::placeholder {
+    color: rgb(255, 255, 255);
+    position: relative;
+    left: 5px;
+    font-family: cursive;
+}
+
+/* tel on hover */
+#input2:hover {
+    transform:  scale(1.03);
+}
+
+/* password */
+#input3 {
+    width: 200px;
+    height: 20px;
+    position: relative;
+    top: 100px;
+    right: 10px;
+    background: #8b17af;
+    border: none;
+    border-bottom: 2px solid indigo;
+    font-family: cursive;
+    color: #FFF;
+
+    /* transition */
+    transition-property: transform;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* password placeholder */
+#input3::placeholder {
+    color: rgb(255, 255, 255);
+    position: relative;
+    left: 5px;
+    font-family: cursive
+}
+
+/* password on hover */
+#input3:hover {
+    transform:  scale(1.03);
+}
+
+/* gender */
+#input4 {
+    height: 20px;
+    position: relative;
+    top: 100px;
+    left: 10px;
+    background: #8b17af;
+    border: none;
+    border-bottom: 2px solid indigo;
+    font-family: cursive;
+    color: #FFF;
+
+    /* transition */
+    transition-property: transform;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* gender placeholder */
+#input4::placeholder {
+    color: rgb(255, 255, 255);
+    position: relative;
+    left: 5px;
+    font-family: cursive
+}
+
+/* gender on hover */
+#input4:hover {
+    transform:  scale(1.03);
+}
+
+/* login button */
+.continue {
+    width: 200px;
+    height: 40px;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    position: absolute;
+    top: 350px;
+
+    /* transition */
+    transition-property: transform;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* login button on hover */
+.continue:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+/* <a> tag styling */
+a {
+    text-decoration: none;
+    color: seagreen;
+}
+
+/* <a> tag on hover */
+a:hover {
+    text-decoration: underline seagreen;
+}
+
+/* back */
+.back {
+    width: 200px;
+    height: 40px;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-left: 10px;
+    position: absolute;
+    top: 280px;
+    margin-right: 10px;
+
+    /* transition */
+    transition-property: transform;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* back on hover */
+.back:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+/* new */
+#new {
+    color: #FFF;
+    position: relative;
+    top: 150px;
+}
+
+/* a1 */
+#a1 {
+    margin-left: 20px;
+    position: relative;
+    top: 150px;
+}
+
+/* footer */
+footer {
+    width: 188vh;
+    height: 150px;
+    background: #FFF;
+    position: absolute;
+    top: 639px;
+    opacity: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+/* footer on hover */
+footer:hover {
+
+    #telephone {
+        opacity: 80%;
+    }
+
+    #tel_number {
+        opacity: 80%;
+    }
+
+    #mail {
+        opacity: 80%;
+    }
+
+    #mail_text {
+        opacity: 80%;
+    }
+
+    #home {
+        opacity: 80%;
+    }
+
+    #home_link {
+        opacity: 80%;
+    }
+
+    #list {
+        opacity: 80%;
+    }
+
+    #list_link {
+        opacity: 80%;
+    }
+
+    #image_login {
+        opacity: 80%;
+    }
+
+    #login_text {
+        opacity: 80%;
+    }
+
+    #yt {
+        opacity: 80%;
+    }
+
+    #facebook_image {
+        opacity: 80%;
+    }
+
+    #tiktok {
+        opacity: 80%;
+    }
+
+    #cursor-pointer {
+        opacity: 0%;
+    }
+
+    #search_input {
+        opacity: 80%;
+    }
+}
+
+/* telephone */
+#telephone {
+    position: relative;
+    bottom: 30px;
+    opacity: 0%;
+
+    /* transition */
+    transition-property: opacity;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* telephone_num */
+#tel_number {
+    position: relative;
+    bottom: 30px;
+    left: 15px;
+    opacity: 0%;
+
+    /* transition */
+    transition-property: opacity;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* email */
+#mail {
+    position: absolute;
+    bottom: 40px;
+    opacity: 0%;
+
+    /* transition */
+    transition-property: opacity;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* email_text */
+#mail_text {
+    position: absolute;
+    bottom: 45px;
+    margin-left: 40px;
+    opacity: 0%;
+
+    /* transition */
+    transition-property: opacity;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* home */
+#home {
+    position: relative;
+    left: 300px;
+    bottom: 35px;
+    opacity: 0%;
+
+    /* transition */
+    transition-property: opacity;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* homepage */
+#home_link {
+    position: relative;
+    left: 315px;
+    bottom: 35px;
+    color: #000;
+    text-decoration: none;
+    opacity: 0%;
+
+    /* transition */
+    transition-property: opacity;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* homepage on hover */
+#home_link:hover {
+    text-decoration: underline #000;
+}
+
+/* list */
+#list {
+    position: relative;
+    left: 195px;
+    top: 20px;
+    opacity: 0%;
+
+    /* transition */
+    transition-property: opacity;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* list_link */
+#list_link {
+    position: relative;
+    top: 22px;
+    left: 210px;
+    color: #000;
+    text-decoration: none;
+    opacity: 0%;
+
+    /* transition */
+    transition-property: opacity;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* list_link on hover */
+#list_link:hover {
+    text-decoration: underline #000;
+}
+
+/* image_login */
+#image_login {
+    position: relative;
+    bottom: 5px;
+    left: 250px;
+    opacity: 0%;
+
+    /* transition */
+    transition-property: opacity;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* login_text */
+#login_text {
+    position: relative;
+    bottom: 5px;
+    left: 260px;
+    color: #000;
+    text-decoration: none;
+    opacity: 0%;
+
+    /* transition */
+    transition-property: opacity;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* login_text on hover */
+#login_text:hover {
+    text-decoration: underline #000;
+}
+
+/* youtube */
+#yt {
+    position: relative;
+    left: 400px;
+    opacity: 0%;
+
+    /* transition */
+    transition-property: opacity, transform;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* youtube on hover */
+#yt:hover {
+    transform: scale(1.1) rotate(360deg);
+}
+
+/* tiktok */
+#tiktok {
+    position: relative;
+    left: 440px;
+    opacity: 0%;
+
+    /* transition */
+    transition-property: opacity, transform;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* tiktok on hover */
+#tiktok:hover {
+    transform: scale(1.1) rotate(360deg);
+}
+
+/* facebook */
+#facebook_image {
+    position: relative;
+    left: 480px;
+    opacity: 0%;
+
+    /* transition */
+    transition-property: opacity, transform;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* facebook on hover */
+#facebook_image:hover {
+    transform: scale(1.1) rotate(360deg);
+}
+
+/* cursor-pointer img */
+#cursor-pointer {
+    position: relative;
+    left: 750px;
+    opacity: 80%;
+
+    /* transition */
+    transition-property: opacity;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* search_input */
+#search_input {
+    position: relative;
+    left: 475px;
+    width: 200px;
+    height: 25px;
+    border: none;
+    border-bottom: 2px solid #000;
+    font-family: cursive;
+    color: #000;
+    opacity: 0%;
+
+    /* transition */
+    transition-property: opacity, transform;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* search_input placeholder */
+#search_input::placeholder {
+    color: #000;
+    font-family: cursive;
+    position: relative;
+    left: 5px;
+}
+
+/* search_input on hover */
+#search_input:hover {
+    transform: scale(1.03);
+}
+
+/* glass effect */
+.glass {
+    background: transparent;
+    border: 2px solid #000;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}

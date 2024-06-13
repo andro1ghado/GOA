@@ -1,0 +1,884 @@
+/* font */
+html {
+    font-family: sans-serif;
+}
+
+/* CSS reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* body */
+body {
+    background: grey;
+    animation-name: backgroundAnimation;
+    animation-duration: 3s;
+    animation-delay: .2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* @keyframes backgroundAnimation */
+@keyframes backgroundAnimation {
+    0% {
+        background: grey;
+    }
+    25% {
+        background: darkslategray;
+    }
+    50% {
+        background: slategray;
+    }
+    75% {
+        background: lightslategray;
+    }
+    100% {
+        background: grey;
+    }
+}
+
+/* title */
+#title {
+    color: #FFF;
+    font-weight: bold;
+    font-size: larger;
+}
+
+/* titleContainer */
+.titleContainer {
+    width: 500px;
+    height: 60px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    opacity: 80%;
+    margin-top: 10px;
+
+    /* animation */
+    animation-name: starting;
+    animation-duration: 1s;
+    animation-delay: .2s;
+    animation-timing-function: linear;
+}
+
+main {
+    width: 95%;
+    height: 500px;
+    padding: 20px;
+    position: absolute;
+    top: 100px;
+
+    /* grid */
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 300px 300px 300px 300px;
+}
+
+/* gagnidze_box */
+.gagnidze_box {
+    width: 300px;
+    height: 300px;
+    opacity: 80%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    background: #FFF;
+
+    /* transition */
+    transition-property: transform, background;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+
+    /* animation */
+    animation-name: starting;
+    animation-duration: 1s;
+    animation-delay: .2s;
+    animation-timing-function: linear;
+}
+
+/* cursor_pointer */
+.cursor_pointer {
+    position: relative;
+    top: 150px;
+    left: 80px;
+    opacity: 80%;
+
+    /* transition */
+    transition-property: opacity;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* filo_cursor */
+#filo_cursor {
+    position: relative;
+    top: 150px;
+    left: 70px;
+    opacity: 80%;
+
+    /* transition */
+    transition-property: opacity;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* @keyframes */
+@keyframes starting {
+    0% {
+        opacity: 0%;
+    }
+    25% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 75%;
+    }
+}
+
+/* gagnidze_box on hover */
+.gagnidze_box:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+    background: #000;
+
+    .squad {
+        opacity: 100%;
+    }
+
+    p, li {
+        color: #FFF;
+        opacity: 80%;
+    }
+
+    .cursor_pointer {
+        opacity: 0%;
+    }
+
+    .squad_title {
+        opacity: 80%;
+    }
+}
+
+/* styling <p> and <li> */
+p, li {
+    color: #000;
+    font-weight: bold;
+    opacity: 60%;
+
+    /* transition */
+    transition-property: color, opacity;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* squad_title */
+.squad_title {
+    position: absolute;
+    opacity: 60%;
+
+    /* transition */
+    transition-property: opacity;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* squad_title 1 */
+.squad_title1 {
+    position: absolute;
+    opacity: 60%;
+
+    /* transition */
+    transition-property: opacity;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* squad_title 2 */
+.squad_title2 {
+    position: absolute;
+    opacity: 60%;
+
+    /* transition */
+    transition-property: opacity;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* squad_title 3 */
+.squad_title3 {
+    position: absolute;
+    opacity: 60%;
+
+    /* transition */
+    transition-property: opacity;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* squad_title 4 */
+.squad_title4 {
+    position: absolute;
+    opacity: 60%;
+
+    /* transition */
+    transition-property: opacity;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* squad */
+.squad {
+    position: relative;
+    top: 40px;
+    opacity: 0%;
+
+    /* transition */
+    transition-property: opacity;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* squad1 */
+.squad1 {
+    position: relative;
+    top: 40px;
+    opacity: 0%;
+
+    /* transition */
+    transition-property: opacity;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* squad2 */
+.squad2 {
+    position: relative;
+    top: 40px;
+    opacity: 0%;
+
+    /* transition */
+    transition-property: opacity;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* squad3 */
+.squad3 {
+    position: relative;
+    top: 40px;
+    opacity: 0%;
+
+    /* transition */
+    transition-property: opacity;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* squad4 */
+.squad4 {
+    position: relative;
+    top: 40px;
+    opacity: 0%;
+
+    /* transition */
+    transition-property: opacity;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* ul */
+ul {
+    list-style: disc;
+}
+
+/* janeza_box */
+.janeza_box {
+    width: 300px;
+    height: 300px;
+    opacity: 80%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    background: #FFF;
+
+    /* transition */
+    transition-property: transform, background;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+
+    /* animation */
+    animation-name: starting;
+    animation-duration: 1s;
+    animation-delay: .2s;
+    animation-timing-function: linear;
+}
+
+/* janeza_box on hover */
+.janeza_box:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+    background: #000;
+
+    .squad1 {
+        opacity: 100%;
+    }
+
+    p, li {
+        color: #FFF;
+        opacity: 80%;
+    }
+
+    .cursor_pointer {
+        opacity: 0%;
+    }
+
+    .squad_title1 {
+        opacity: 80%;
+    }
+}
+
+/* gabrieli_box */
+.gabrieli_box {
+    width: 300px;
+    height: 300px;
+    opacity: 80%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    background: #FFF;
+
+    /* transition */
+    transition-property: transform, background;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+
+    /* animation */
+    animation-name: starting;
+    animation-duration: 1s;
+    animation-delay: .2s;
+    animation-timing-function: linear;
+}
+
+/* gabrieli_box on hover */
+.gabrieli_box:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+    background: #000;
+    
+    .squad2 {
+        opacity: 100%;
+    }
+
+    p, li {
+        color: #FFF;
+        opacity: 80%;
+    }
+
+    .cursor_pointer {
+        opacity: 0%;
+    }
+
+    .squad_title2 {
+        opacity: 80%;
+    }
+}
+
+/* soso_box */
+.soso_box {
+    width: 300px;
+    height: 300px;
+    opacity: 80%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    background: #FFF;
+
+    /* transition */
+    transition-property: transform, background;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+
+    /* animation */
+    animation-name: starting;
+    animation-duration: 1s;
+    animation-delay: .2s;
+    animation-timing-function: linear;
+}
+
+/* soso_box on hover */
+.soso_box:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+    background: #000;
+
+    .squad3 {
+        opacity: 100%;
+    }
+
+    p, li {
+        color: #FFF;
+        opacity: 80%;
+    }
+
+    .cursor_pointer {
+        opacity: 0%;
+    }
+
+    .squad_title3 {
+        opacity: 80%;
+    }
+}
+
+/* filo_box */
+.filo_box {
+    width: 300px;
+    height: 300px;
+    opacity: 80%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    position: absolute;
+    top: 350px;
+    left: 600px;
+    background: #FFF;
+
+    /* transition */
+    transition-property: transform, background;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+
+    /* animation */
+    animation-name: starting;
+    animation-duration: 1s;
+    animation-delay: .2s;
+    animation-timing-function: linear;
+}
+
+/* filo_box on hover */
+.filo_box:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+    background: #000;
+
+    .squad4 {
+        opacity: 100%;
+    }
+
+    p, li {
+        color: #FFF;
+        opacity: 80%;
+    }
+
+    #filo_cursor {
+        opacity: 0%;
+    }
+
+    .squad_title4 {
+        opacity: 80%;
+    }
+}
+
+/* glass effect */
+.style {
+    box-shadow: 0 8px 32px 0 indigo;
+}
+
+/* footer1 */
+#footer1 {
+    background: #FFF;
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    left: 90px;
+    top: 460px;
+    border-radius: 10px;
+    opacity: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    /* transition */
+    transition-property: transform, background;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+
+    /* animation */
+    animation-name: starting;
+    animation-duration: 1s;
+    animation-delay: .2s;
+    animation-timing-function: linear;
+}
+
+/* footer1 on hover */
+#footer1:hover {
+    transform: scale(1.03);
+    background: #000;
+
+    #logo_calendar {
+        opacity: 80%;
+    }
+
+    #calendar_link {
+        opacity: 80%;
+    }
+
+    #logo_home {
+        opacity: 80%;
+    }
+
+    .style_links {
+        opacity: 80%;
+    }
+    
+    #login_logo {
+        opacity: 80%;
+    }
+
+    .cursor-footers {
+        opacity: 0%;
+    }
+
+}
+
+/* logo_calendar */
+#logo_calendar {
+    position: relative;
+    left: 50px;
+    top: 50px;
+    opacity: 0%;
+    display: inline-flex;
+
+    /* transition */
+    transition-property: opacity;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* style_links */
+.style_links {
+    color: #FFF;
+    text-decoration: none;
+    opacity: 0%;
+
+    /* transition */
+    transition-property: opacity;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* style_links on hover */
+.style_links:hover {
+    text-decoration: underline #FFF;
+}
+
+/* calendar_link */
+#calendar_link {
+    position: relative;
+    top: 60px;
+    left: 60px;
+}
+
+/* home image */
+#logo_home {
+    position: absolute;
+    top: 130px;
+    left: 50px;
+    opacity: 0%;
+
+    /* transition */
+    transition-property: opacity;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* homepage */
+#home_link {
+    position: absolute;
+    top: 138px;
+    left: 95px;;
+}
+
+/* login_logo */
+#login_logo {
+    position: absolute;
+    top: 220px;
+    left: 50px;
+    opacity: 0%;
+
+    /* transition */
+    transition-property: opacity;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* login_link */
+#login_link {
+    position: absolute;
+    left: 95px;
+    top: 228px;
+}
+
+/* cursor-footers */
+.cursor-footers {
+    position: absolute;
+    top: 135px;
+    left: 320px;
+    opacity: 80%;
+
+    /* transition */
+    transition-property: opacity;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* footer2 */
+#footer2 {
+    background: #FFF;
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    left: 1000px;
+    top: 460px;
+    border-radius: 10px;
+    opacity: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    /* transition */
+    transition-property: transform, background;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+
+    /* animation */
+    animation-name: starting;
+    animation-duration: 1s;
+    animation-delay: .2s;
+    animation-timing-function: linear;
+}
+
+/* footer2 on hover */
+#footer2:hover {
+    transform: scale(1.03);
+    background: #000;
+
+    .cursor-footers {
+        opacity: 0%;
+    }
+    
+    #search_bar {
+        opacity: 80%;
+    }
+
+    #youtube_image {
+        opacity: 80%;
+    }
+
+    #facebook_image {
+        opacity: 80%;
+    }
+
+    #tiktok_image {
+        opacity: 80%;
+    }
+
+    #mail-image {
+        opacity: 80%;
+    }
+
+    #mail-text {
+        opacity: 80%;
+    }
+    
+    #tel_image {
+        opacity: 80%;
+    }
+
+    #tel_text {
+        opacity: 80%;
+    }
+
+}
+
+/* search_bar */
+#search_bar {
+    margin-top: 30px;
+    border: none;
+    border-bottom: 2px solid indigo;
+    background: #8b17af;
+    width: 180px;
+    height: 25px;
+    color: #FFF;
+    font-family: cursive;
+    opacity: 0%;
+
+    /* transition */
+    transition-property: transform, opacity;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* search_bar on hover */
+#search_bar:hover {
+    transform: scale(1.05);
+}
+
+/* search_bar placeholder */
+#search_bar::placeholder {
+    color: #FFF;
+    position: relative;
+    left: 5px;
+}
+
+/* youtube image */
+#youtube_image {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    opacity: 0%;
+
+    /* transition */
+    transition-property: transform, opacity;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* youtube image on hover */
+#youtube_image:hover {
+    transform: scale(1.1) rotate(360deg);
+}
+
+/* facebook image */
+#facebook_image {
+    position: absolute;
+    left: 170px;
+    top: 100px;
+    opacity: 0%;
+    
+    /* transition */
+    transition-property: transform, opacity;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* facebook image on hover */
+#facebook_image:hover {
+    transform: scale(1.1) rotate(360deg);
+}
+
+/* tiktok image */
+#tiktok_image {
+    position: absolute;
+    left: 240px;
+    top: 100px;
+    opacity: 0%;
+    
+    /* transition */
+    transition-property: transform, opacity;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* tiktok image on hover */
+#tiktok_image:hover {
+    transform: scale(1.1) rotate(360deg);
+}
+
+/* mail image */
+#mail-image {
+    position: absolute;
+    left: 60px;
+    top: 170px;
+    opacity: 0%;
+    
+    /* transition */
+    transition-property: opacity;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* mail text */
+#mail-text {
+    opacity: 0%;
+    color: #FFF;
+    position: relative;
+    top: 126px;
+    left: 35px;
+}
+
+/* tel_image */
+#tel_image {
+    position: absolute;
+    left: 60px;
+    top: 230px;
+    opacity: 0%;
+    
+    /* transition */
+    transition-property: opacity;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* tel_text */
+#tel_text {
+    color: #FFF;
+    position: relative;
+    top: 168px;
+    right: 20px;
+    opacity: 0%;
+
+    /* transition */
+    transition-property: opacity;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}

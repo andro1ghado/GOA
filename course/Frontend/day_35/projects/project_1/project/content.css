@@ -1,0 +1,573 @@
+/* font */
+html {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+}
+
+/* body */
+body {
+    background: grey;
+    animation-name: backgroundAnimation;
+    animation-duration: 3s;
+    animation-delay: .2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* @keyframes backgroundAnimation */
+@keyframes backgroundAnimation {
+    0% {
+        background: grey;
+    }
+    25% {
+        background: darkslategray;
+    }
+    50% {
+        background: slategray;
+    }
+    75% {
+        background: lightslategray;
+    }
+    100% {
+        background: grey;
+    }
+}
+
+/* css reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* responsive */
+.responsive_main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100vh;
+}
+
+/* sticky_box */
+.sticky_box {
+    width: 100%;
+    height: 100px;
+    background: #000;
+    opacity: 75%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* academy_name */
+.academy_name {
+    color: #FFF;
+    font-style: italic;
+}
+
+/* fb_div */
+.fb_div {
+    width: 200px;
+    height: 60px;
+    background: cornflowerblue;
+    border-radius: 10px;
+    position: relative;
+    left: 200px;
+    display: flex;
+    align-items: center;
+
+
+    /* transition */
+    transition-property: transform;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* fb_div on hover */
+.fb_div:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+/* image */
+#image {
+    position: relative;
+    left: 20px;
+
+    /* transition */
+    transition-property: transform;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* image on hover */
+#image:hover {
+    cursor: pointer;
+    transform: scale(1.1) rotate(360deg);
+}
+
+/* fb_text */
+.fb_text {
+    color: #FFF;
+    position: relative;
+    left: 40px;
+    letter-spacing: normal;
+}
+
+/* yt_div */
+.yt_div {
+    width: 200px;
+    height: 60px;
+    background: crimson;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    left: 220px;
+
+    /* transition */
+    transition-property: transform;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* yt_div on hover */
+.yt_div:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* yt image */
+#image2 {
+    position: relative;
+    left: 20px;
+
+    /* transition */
+    transition-property: transform;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* yt image on hover */
+#image2:hover {
+    cursor: pointer;
+    transform: scale(1.1) rotate(360deg);
+}
+
+/* yt_text */
+.yt_text {
+    color: #FFF;
+    position: relative;
+    left: 30px;
+    letter-spacing: normal;
+}
+
+/* search_bar */
+#search_bar {
+    position: relative;
+    left: 280px;
+    width: 200px;
+    height: 35px;
+    font-family: cursive;
+
+    /* styling */
+    border: none;
+    border-bottom: 4px solid darkmagenta;
+    background: #000;
+    color: #FFF;
+
+    /* transition */
+    transition-property: transform;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* search bar when hovered */
+#search_bar:hover {
+    transform: scale(1.05);
+}
+
+/* search_bar placeholder */
+#search_bar::placeholder {
+    color: darkmagenta;
+}
+
+/* register */
+.register {
+    width: 120px;
+    height: 45px;
+    background: darkmagenta;
+    border-radius: 10px;
+    position: relative;
+    left: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* animation */
+    animation: none;
+
+    /* transition */
+    transition-property: transform;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+}
+
+/* register on hover */
+.register:hover {
+    animation-name: hover;
+    animation-duration: 2s;
+    animation-delay: .2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+
+    /* transition */
+    transform: scale(1.05);
+}
+
+/* @keyframes hover */
+@keyframes hover {
+    0% {
+        background: darkmagenta;
+    }
+    25% {
+        background: orchid;
+    }
+    50% {
+        background: purple;
+    }
+    75% {
+        background: plum;
+    }
+    100% {
+        background: darkmagenta;
+    }
+}
+
+/* @keyframes starting */
+@keyframes starting {
+    0% {
+        opacity: 0%;
+    }
+    25% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 75%;
+    }
+}
+
+/* register_text */
+#register_text {
+    text-decoration: none;
+    color: #FFF;
+}
+
+/* register_text on hover */
+#register_text:hover {
+    text-decoration: underline #FFF;
+}
+
+/* content1 (grid container) */
+.content1 {
+    width: 1440px;
+    height: 390px;
+    position: absolute;
+    top: 110px;
+    margin: 20px;
+    padding: 20px;
+
+    /* grid */
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 550px 850px;
+    grid-template-rows: 175px;
+}
+
+/* div_img */
+.div_img {
+    width: 550px;
+    height: 370px;
+    background: #000;
+    opacity: 80%;
+    border-radius: 10px;
+    padding: 20px;
+
+    /* transition */
+    transition-property: transform;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+
+    /* animation */
+    animation-name: starting;
+    animation-duration: 1s;
+    animation-delay: .2s;
+    animation-timing-function: linear;
+}
+
+/* div_img on hover */
+.div_img:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+/* icon */
+#icon {
+    width: 510px;
+    height: 320px;
+    border-radius: 10px;
+}
+
+/* text_div */
+.text_div {
+    width: 850px;
+    height: 175px;
+    background: #000;
+    border-radius: 10px;
+    opacity: 80%;
+    padding: 20px;
+
+    /* transition */
+    transition-property: transform;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+
+    /* animation */
+    animation-name: starting;
+    animation-duration: 1s;
+    animation-delay: .2s;
+    animation-timing-function: linear;
+}
+
+/* text_div on hover */
+.text_div:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+/* text_div_2 */
+.text_div_2 {
+    width: 850px;
+    height: 175px;
+    background: #000;
+    border-radius: 10px;
+    opacity: 80%;
+    padding: 20px;
+    position: relative;
+    left: 570px;
+
+    /* transition */
+    transition-property: transform;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+
+    /* animation */
+    animation-name: starting;
+    animation-duration: 1s;
+    animation-delay: .2s;
+    animation-timing-function: linear;
+}
+
+/* text_div_2 on hover */
+.text_div_2:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+/* p and li tag styling */
+p, li {
+    color: #FFF;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+/* content2 (grid container)*/
+.content2 {
+    width: 1420px;
+    height: 240px;
+    margin: 20px;
+    padding: 20px;
+    position: absolute;
+    top: 520px;
+    left: 20px;
+
+    /* grid */
+    display: grid;
+    grid-template-columns: 400px 200px 200px;
+
+    gap: 170px;
+}
+
+/* groups */
+.groups {
+    width: 400px;
+    height: 200px;
+    background: #000;
+    opacity: 80%;
+    border-radius: 10px;
+    padding: 20px;
+
+    /* transition */
+    transition-property: transform;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+
+    /* animation */
+    animation-name: starting;
+    animation-duration: 1s;
+    animation-delay: .2s;
+    animation-timing-function: linear;
+}
+
+/* groups on hover */
+.groups:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+/* li tag styling:nth-of-type(1) */
+li:nth-of-type(1) {
+    margin-top: 10px;
+}
+
+/* li tag styling */
+li {
+    margin-left: 10px;
+}
+
+/* ul tag styling */
+ul {
+    list-style-type: square;
+}
+
+/* div_img_2 */
+.div_img_2 {
+    width: 300px;
+    height: 200px;
+    background-color: #000;
+    opacity: 80%;
+    border-radius: 10px;
+    padding: 20px;
+
+    /* transition */
+    transition-property: transform;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+
+    /* animation */
+    animation-name: starting;
+    animation-duration: 1s;
+    animation-delay: .2s;
+    animation-timing-function: linear;
+}
+
+/* div_img_2 on hover */
+.div_img_2:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+/* icon_2 */
+#icon_2 {
+    border-radius: 10px;
+    width: 260px;
+    height: 160px;
+}
+
+/* people_div */
+.people_div {
+    width: 400px;
+    height: 200px;
+    background: #000;
+    margin-left: 60px;
+    border-radius: 10px;
+    opacity: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+
+    /* transition */
+    transition-property: transform;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+
+    /* animation */
+    animation-name: starting;
+    animation-duration: 1s;
+    animation-delay: .2s;
+    animation-timing-function: linear;
+}
+
+/* people_div on hover */
+.people_div:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+/* members */
+.members {
+    width: 300px;
+    height: 50px;
+    background: indigo;
+    position: relative;
+    top: 100px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* transition */
+    transition-property: transform;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .7s;
+
+    /* animation */
+    animation: none;
+}
+
+/* members on hover */
+.members:hover {
+    transform: scale(1.03);
+
+    /* animation */
+    animation-name: hover;
+    animation-duration: 2s;
+    animation-delay: .2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+/* styling <a> */
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+/* <a> on hover */
+a:hover {
+    text-decoration: underline #FFF;
+}
+
+/* t1 */
+#t1 {
+    position: absolute;
+}
+
+/* responsive */

@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree&display=swap');
+
+* {
+    font-family: 'Figtree', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(9, 3, 51);
+}
+
+.container {
+    width: 700px;
+    height: 300px;
+    background: rgb(63, 4, 85);
+    border-radius: 10px;
+}
+
+.image {
+    float: right;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius:  10px;
+}
+
+.title {
+    color: purple;
+    text-align: center;
+}
+
+.content {
+    text-align: center;
+    color: lightslategrey
+}
+
+#A {
+    color: white;
+    position: relative;
+    left: 50px;
+    top: 40px;
+}
+
+#Acontent {
+    color: lightslategray;
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+
+#B {
+    color: white;
+    position: relative;
+    bottom: 38px;
+    left: 180px
+}
+
+#Bcontent {
+    color: lightslategray;
+    position: relative;
+    bottom: 48px;
+    left: 150px
+}

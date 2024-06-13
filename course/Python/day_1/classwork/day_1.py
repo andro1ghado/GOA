@@ -1,0 +1,1 @@
+print("This is GOA day 1 =D")

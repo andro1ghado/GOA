@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+* {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr:nth-child(1) {
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+tr:nth-child(2) {
+    color: #FFFFFF;
+    background-color: #0000F0
+}
+
+tr:nth-child(3) {
+    color: #FFFFFF;
+    background-color: #009F00;
+}
+
+tr:nth-child(4) {
+    color: #FFFFFF;
+    background-color: #FF9F00;
+}
+
+tr:nth-child(5) {
+    color: #FFFFFF;
+    background-color: #FF0000;
+}
+
+tr:nth-child(6) {
+    color: #FFFFFF;
+    background-color: #0000F0;
+}

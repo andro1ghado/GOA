@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+tr:nth-child(1) {
+    background-color: mediumslateblue;
+}
+
+.lightBlue {
+    background-color: lightskyblue;
+}
+
+.lightSkyBlue {
+    background-color: lightblue;
+}

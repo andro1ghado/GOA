@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Forms</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body class="background">
+        <div class="parent">
+            <form>
+                <label for="firstName">First name:</label>
+                <input type="text"  placeholder="Enter Here" id="firstName">
+
+                <label for="lastName"><br>Last Name:</label>
+                <input type="text"  placeholder="Enter Here" id="lastName">
+
+                <label><br>Gender:</label>
+                <input type="radio" id="checkboxGender" name="Gender">
+                <label for="radioGender">Male</label>
+                <input type="radio" id="checkboxGender" name="Gender">
+                <label for="radioGender">Female</label>
+
+                <br><label for="emailText">Email:</label>
+                <input type="email" id="emailText" placeholder="example@domain.net">
+
+                <label for="dateForm"><br>Date of Birth</label>
+                <input type="date" id="dateForm">
+            </form>
+            <form>
+                <label for="food">Favourite Food</label>
+                <select id="food">
+                    <option value="Pizza">Pizza</option>
+                    <option value="Burger">Burger</option>
+                    <option value="Apples">Apples</option>
+                    <option value="else">Something else..</option>
+                </select>
+
+                <p><br>Enter Custom Message:</p>
+            </form>
+            <form>
+                <textarea placeholder="Enter Message Here"></textarea>
+
+                <label for="address"><br>Enter Address:</label>
+                <input id="address" type="text" placeholder="Enter Here">
+
+                <label for="password"><br>Enter Password:</label>
+                <input type="password" placeholder="Enter Password" id="password">
+                
+                <label for="telNumber"><br>Enter Phone Number:</label>
+                <input type="tel" id="telNumber" placeholder="Enter Here">
+            </form>
+            <form>
+                <input type="submit" id="submitButton">
+            </form>
+        </div>
+    </body>
+    </html>

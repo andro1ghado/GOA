@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+* {
+    color:azure;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+body {
+    background-color: mediumaquamarine;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr:nth-child(1) {
+    background-color: rgb(25, 115, 205);
+    height: 60px;
+}
+
+td {
+    background-color: lightskyblue;
+    height: 40px;
+}

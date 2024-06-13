@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree&display=swap');
+
+* {
+    font-family: 'Figtree', sans-serif;
+    cursor: default;
+}
+
+body {
+    background-image: url(images/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 400px;
+    height: 620px;
+    border: 0px solid transparent;
+
+    border-radius: 20px;
+    background-color: white;
+}
+
+.thumbnail {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.heading2 {
+    font-size: x-large;
+    margin-top: 20px;
+}
+
+.child {
+    width: 300px;
+    height: 64px;
+
+    border: 1px solid lightcyan;
+    background-color: lightcyan;
+    margin-top: 40px;
+
+    border-radius: 50px;
+}
+
+.icon {
+    float: left;
+}
+
+.heading3 {
+    position: relative;
+    right: 50px;
+    bottom: 10px;
+}
+
+.price {
+    color: lightslategray;
+    position: relative;
+    bottom: 25px;
+    right: 50px;
+}
+
+.link {
+    position: relative;
+    bottom: 80px;
+    left: 100px;
+}
+
+.link:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.paymentProceed {
+    width: 330px;
+    height: 55px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    position: relative;
+    top: 40px;
+    background-color: blueviolet;
+    color: white;
+}
+
+.heading4 {
+    position: relative;
+    bottom: 5px;
+    cursor: pointer;
+}
+
+.paymentProceed:hover {
+    background-color: darkorchid;
+    cursor: pointer;
+}
+
+.heading5 {
+    color: lightslategray;
+    position: relative;
+    top: 55px;
+    font-size: large;
+    display: inline;
+}
+
+.heading5:hover {
+    cursor: pointer;
+    color: black;
+}

@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree&display=swap');
+
+* {
+    font-family: 'Figtree', sans-serif;
+    cursor: default;
+}
+
+body {
+    background-color: rgb(10, 5, 35);
+}
+
+.container {
+    width: 350px;
+    height: 600px;
+    border: 0px solid transparent;
+    border-radius: 20px;
+    background-color: #020226;
+    position: relative;
+    left: 37%;
+    padding: 20px;
+}
+
+.child {
+    background-color: rgb(3, 3, 55);
+    box-sizing: border-box;
+    height: 600px;
+    width: 350px;
+    border-radius: 20px;
+}
+
+.thumbnail {
+    position: relative;
+    top: 20px;
+    border-radius: 20px;
+}
+
+.viewed {
+    position: absolute;
+    left: 130px;
+    top: 130px;
+}
+
+.thumbnailHover {
+    width: 300px;
+    height: 300px;
+    background-color: transparent;
+    border-radius: 20px;
+    position: relative;
+    left: 25px;
+    bottom: 280px;
+}
+
+.thumbnailHover:hover {
+    background-color: mediumaquamarine;
+}
+
+p {
+    color: lightslategray;
+}
+
+.tokenName {
+    color: white;
+    position: relative;
+    bottom: 250px;
+    left: 30px;
+    display: inline;
+}
+
+.tokenName:hover {
+    color: aqua;
+    text-shadow: 0px 0px 8px aquamarine;
+}
+
+.description {
+    position: relative;
+    bottom: 230px;
+    left: 30px;
+}
+
+.iconEthernum {
+    position: relative;
+    bottom: 220px;
+    left: 30px;
+}
+
+.priceEthernum {
+    position: relative;
+    color: aqua;
+    left: 50px;
+    bottom: 263px;
+}
+
+.clockIcon {
+    position: relative;
+    bottom: 302px;
+    float: right;
+    right: 100px;
+}
+
+.limitText {
+    position: relative;
+    bottom: 318px;
+    float: right;
+    right: 5px;
+}
+
+hr {
+    color: #020226;
+    position: relative;
+    bottom: 250px;
+    left: 45px;
+}
+
+.profile {
+    position: relative;
+    left: 35px;
+    bottom: 245px;
+}
+
+.text {
+    display: inline;
+    position: relative;
+    bottom: 260px;
+    left: 50px;
+}
+
+.author {
+    position: relative;
+    color: #FFFFFF;
+    left: 180px;
+    bottom: 295px;
+}
+
+.author:hover {
+    color: aqua;
+    text-shadow: 0px 0px 8px aquamarine;
+}

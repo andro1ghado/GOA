@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* {
+    font-family: 'Figtree', sans-serif;
+    cursor: default;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+.container {
+    width: 700px;
+    height: 500px;
+    border: 1px solid black;
+    border-radius: 20px;
+    position: relative;
+    left: 450px;
+    top: 50px;
+    background-color: white;
+}
+
+.thumbnail {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.heading5 {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: lightslategray;
+    position: relative;
+    bottom: 500px;
+    left: 450px;
+}
+
+.name {
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    bottom: 470px;
+    left: 400px;
+}
+
+.description {
+    color: lightslategray;
+    position: relative;
+    bottom: 450px;
+    left: 400px;
+}
+
+.priceDiscount {
+    color: seagreen;
+    position: relative;
+    bottom: 430px;
+    left: 400px;
+}
+
+.priceRegular {
+    color: lightslategray;
+    text-decoration: line-through;
+    position: relative;
+    bottom: 480px;
+    left: 550px;
+}
+
+.child {
+    border: 0px transparent;
+    border-radius: 10px;
+    width: 300px;
+    height: 65px;
+    background-color: seagreen;
+    position: relative;
+    bottom: 450px;
+    left: 370px;
+}
+
+.child:hover {
+    background-color: green;
+    border: 0px transparent;
+    cursor: pointer;
+}
+
+.cartIcon {
+    position: relative;
+    top: 15px;
+    left: 50px;
+}
+
+.cartIcon:hover {
+    cursor: pointer;
+}
+
+.cartAddText {
+    color: white;
+    position: relative;
+    left: 120px;
+    bottom: 38px;
+}

@@ -1,0 +1,48 @@
+
+* {
+    color: black;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+body {
+    background-color: darkgreen;
+}
+
+tr:nth-child(1) {
+    background-color: lightblue;
+}
+
+td:nth-child(1) {
+    background-color: yellow;
+}
+
+td:nth-child(2) {
+    background-color: rgb(214, 197, 7);
+}
+
+td:nth-child(3) {
+    background-color: goldenrod;
+}
+
+td:nth-child(4) {
+    background-color: orangered;
+}
+
+td:nth-child(5) {
+    background-color: darkred;
+}
+
+
+
+
+
+
+th, td {
+    text-align: center;
+    width: 100px;
+    height: 30px;
+}
+

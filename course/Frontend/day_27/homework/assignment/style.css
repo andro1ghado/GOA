@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Oswald&family=Roboto:wght@900&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    color:darkblue;
+    
+}
+
+#title {
+    font-family: 'Open Sans', sans-serif;
+    background-color: teal;
+    text-align: center;
+}
+
+p {
+    background-color: aqua;
+}
+
+#ImagesMemes {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 200%;
+    background-color: chartreuse;
+}
+
+#Meme1Image {
+    margin-left: 20px;
+}
+
+#Meme2Image {
+    margin-left: 550px;
+}
+
+#AudioMemes {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 200%;
+    background-color: chartreuse;
+}
+
+#AudioMeme {
+    margin-left: 880px;
+}
+
+#VideoMemes {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 200%;
+    background-color: chartreuse;
+}
+
+#VIDEOSMEME {
+    margin-left: 200px;
+}

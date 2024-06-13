@@ -1,0 +1,40 @@
+
+.title {
+    color:orange;  text-align: center;  background:darkgoldenrod;
+}
+
+.leftText {
+    color:darkgreen;  text-align: left;
+}
+
+.JanezaText {
+    color:aquamarine;
+}
+
+.SosoText {
+    color:orchid;
+}
+
+.TyeshelaText {
+    color:yellow
+}
+
+.FiloText {
+    color:darkred
+}
+
+.GabrieliText {
+    color:blue
+}
+
+h5 {
+    color:mediumaquamarine;   text-align: center;
+}
+
+.rightText {
+    color:darkgreen;   text-align: right;
+}
+
+.links {
+    text-align: center;
+}

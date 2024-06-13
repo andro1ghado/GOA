@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=IBM+Plex+Sans:wght@500&family=Open+Sans:wght@600&family=Roboto:wght@700;900&display=swap');
+
+h1.title {
+    background:darkcyan;  color: aliceblue;  text-align: center;   font-family: 'Hedvig Letters Sans', sans-serif;
+}
+p {
+    color:aliceblue;  font-family: 'Hedvig Letters Sans',  sans-serif;
+}
+p.aside {
+    color:aliceblue;  font-family: 'Hedvig Letters Sans',  sans-serif;  text-align: center;
+}

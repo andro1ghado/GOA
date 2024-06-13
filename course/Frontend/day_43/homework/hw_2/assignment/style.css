@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.inter {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: #FFF;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    background: hsl(0, 0%, 8%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 300px;
+    height: 550px;
+    background: hsl(0, 0%, 12%);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+#image {
+    border-radius: 50%;
+    position: relative;
+    top: 20px;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    top: 30px;
+}
+
+.location {
+    font-size: small;
+    position: relative;
+    top: 35px;
+    color: hsl(75, 94%, 57%);
+}
+
+.description {
+    font-size: small;
+    opacity: 50%;
+    position: relative;
+    top: 60px;
+}
+
+.buttons_container {
+    width: 260px;
+    height: 300px;
+    position: relative;
+    top: 80px;
+    display: grid;
+}
+
+.buttons {
+    width: 260px;
+    height: 50px;
+    background: hsl(0, 0%, 20%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.buttons:active {
+    background: hsl(75, 94%, 57%);
+    .social_medias {
+        color: #000;
+    }
+}
+
+.social_medias {
+    font-size: small;
+    font-weight: 600;
+}

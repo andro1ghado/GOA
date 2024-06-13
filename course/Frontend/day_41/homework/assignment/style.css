@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.banner {
+    width: 100%;
+    height: 160px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    color: #FFF;
+}
+
+.name {
+    letter-spacing: 5px;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+main {
+    width: 100%;
+    height: 79.4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spider {
+    border-radius: 10px;
+}
+
+.lorem {
+    max-width: 300px;
+    color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .lorem {
+        position: relative;
+        top: 400px;
+        right: 200px;
+        max-width: 400px;
+        color: crimson;
+        text-decoration: underline;
+    }
+    .spider {
+        position: relative;
+        left: 60px;
+    }
+}

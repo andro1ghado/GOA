@@ -1,0 +1,175 @@
+/* Importing Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&family=Hedvig+Letters+Sans&family=IBM+Plex+Sans:wght@500&family=Montserrat&family=Open+Sans:wght@600&family=Poppins:wght@700&family=Roboto:wght@700;900&display=swap');
+
+/* Selector to Every Elements */
+
+* {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+}
+
+/* body - display: flex; */
+
+body {
+    background: hsl(210, 46%, 95%);
+}
+
+/* gridcontainer class selector */
+
+.gridcontainer {
+    width: 1440px;
+    height: 650px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 540px 380px 380px;
+    grid-template-rows: 300px;
+    gap: 10px;
+}
+
+/* box for daniel */
+
+.danielbox {
+    width: 540px;
+    height: 300px;
+    background: hsl(263, 55%, 52%);
+    background-image: url(./images/quotes.svg);
+    background-repeat: no-repeat;
+    background-position: 360px 0px;
+    padding: 25px;
+}
+
+/* div */
+
+div {
+    border-radius: 10px;
+}
+
+/* title */
+
+.boxTitle {
+    width: 480px;
+    height: 250px;
+    
+}
+
+/* image */
+
+.image {
+    border-radius: 50%;
+    border: 1px solid hsl(0, 0%, 100%);
+}
+
+/* white text */
+
+p {
+    color: hsl(0, 0%, 100%);
+}
+
+/* name */
+
+.name {
+    position: relative;
+    bottom: 40px;
+    left: 60px;
+}
+
+/* verified style */
+
+.verified {
+    position: relative;
+    opacity: 50%;
+    bottom: 36px;
+    left: 60px;
+}
+
+/* text */
+
+.text {
+    font-size: 20px;
+    position: relative;
+    bottom: 15px;
+}
+
+/* footer info */
+
+.footer {
+    position: relative;
+    opacity: 50%;
+    top: 10px;
+}
+
+/* jonathan box */
+
+.jonathanbox {
+    width: 380px;
+    height: 300px;
+    background: hsl(217, 19%, 35%);
+    padding: 25px;
+}
+
+/* kira box */
+
+.kirabox {
+    width: 260px;
+    height: 530px;
+    background: hsl(0, 0%, 100%);
+    padding: 25px;
+}
+
+/* text1 */
+
+.text1 {
+    font-size: 20px;
+    position: relative;
+    bottom: 15px;
+    color: #000;
+}
+
+/* footer 1 */
+
+.footer1 {
+    position: relative;
+    opacity: 50%;
+    top: 10px;
+    color: #000;
+}
+
+/* jeanette box */
+
+.jeanettebox {
+    width: 380px;
+    height: 300px;
+    background: hsl(0, 0%, 100%);
+    padding: 25px;
+}
+
+/* name 1 */
+
+.name1 {
+    position: relative;
+    bottom: 40px;
+    left: 60px;
+    color: #000;
+}
+
+/* patrick box */
+
+.patrickbox {
+    width: 540px;
+    height: 300px;
+    background: hsl(219, 29%, 14%);
+    padding: 25px;
+    position: relative;
+    right: 160px;
+}
+
+/* patrick photo */
+
+.patrickimage {
+    border-radius: 50%;
+    border: 2px solid hsl(263, 55%, 52%);
+}

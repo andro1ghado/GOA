@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    gap: 5px;
+    grid-template-areas:
+        'aside header header s1'
+        'aside s2 s3 nav'
+        'aside s4 s5 nav';
+    grid-template-columns: 250px 700px 280px;
+    grid-template-rows: 150px 350px 279px
+}
+
+.s1, .s3, .s4 {
+    background: crimson;
+    border: 2px solid black;
+}
+
+aside, header, nav {
+    background: lightgreen;
+    border: 2px solid black;
+}
+
+.s2, .s5 {
+    background: orange;
+    border: 2px solid black;
+}
+
+section, aside, header, nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.s1 {
+    grid-area: s1;
+}
+
+.s2 {
+    grid-area: s2;
+}
+
+.s3 {
+    grid-area: s3;
+}
+
+.s4 {
+    grid-area: s4;
+}
+
+.s5 {
+    grid-area: s5;
+}
+
+header {
+    grid-area: header;
+}
+
+aside {
+    grid-area: aside;
+}
+
+nav {
+    grid-area: nav;
+}

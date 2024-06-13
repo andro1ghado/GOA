@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --desaturated-blue: hsl(229, 23%, 23%);
+    --grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+    --white: #FFF;
+}
+
+.font {
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: var(--dark-cyan);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 25%;
+    height: 50%;
+    background: var(--white);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#card_BG {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#selfie {
+    border-radius: 50%;
+    border: 4px solid var(--white);
+    z-index: 2;
+    position: relative;
+    bottom: 60px;
+}
+
+.name {
+    color: var(--desaturated-blue);
+    font-weight: 700;
+    position: relative;
+    bottom: 30px;
+}
+
+span {
+    font-weight: 400;
+    color: var(--grayish-blue);
+    margin-left: 5px;
+}
+
+.location {
+    font-weight: 400;
+    color: var(--grayish-blue);
+    font-size: 15px;
+    position: relative;
+    bottom: 20px;
+}
+
+.stats {
+    width: 90%;
+    height: 60px;
+    border-top: 1px solid var(--dark-gray);
+    display: -webkit-flex;
+    padding: 10px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.followers {
+    font-weight: 700;
+    color: var(--desaturated-blue);
+    text-align: center;
+    margin-top: 5px;
+}
+
+.followers_span {
+    letter-spacing: 1.3px;
+}
+
+.likes {
+    font-weight: 700;
+    color: var(--desaturated-blue);
+    margin-top: 5px;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.likes_span {
+    letter-spacing: 1.3px;
+}
+
+.photos {
+    font-weight: 700;
+    color: var(--desaturated-blue);
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 50px;
+}
+
+.photos_span {
+    letter-spacing: 1.3px;
+}
+
+.device_box {
+    width: 100%;
+    height: 100vh;
+    display: none;
+    background: red;
+}
+
+.device_text {
+    color: var(--desaturated-blue);
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .device_box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .device_text {
+        display: block;
+    }
+    .container {
+        display: none;
+    }
+}
